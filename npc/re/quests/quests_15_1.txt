@@ -86,7 +86,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -221,7 +226,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7607) == 0 && ep15_1_atnad < 3" );
+=======
+	questinfo 7607, QTYPE_QUEST, 1;
+	setquestinfo_level 7607,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7607, QTYPE_QUEST, 1;
 	setquestinfo_level 7607,140,175;
@@ -564,10 +574,13 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7611) == 0 && ep15_1_atnad == 4" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7611,HUNTING) == 2" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
@@ -578,6 +591,9 @@ OnInit:
 	// setquestinfo_req 7612,7611,2;// todo : display when HUNTING completed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -701,7 +717,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 0 && BaseLevel >= 140" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610,140,175;
@@ -948,11 +969,14 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 2 && isbegin_quest(7611) == 0 && isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7613) == 0 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7613,HUNTING) == 2 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7618) == 0 && isbegin_quest(7617) == 1" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
@@ -968,6 +992,9 @@ OnInit:
 	// setquestinfo_req 7614,7613,2;// todo : display when HUNTING completed
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -1312,8 +1339,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7619) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7617) == 0 && isbegin_quest(7618) == 0 && (checkquest(7616,PLAYTIME) == 0 || checkquest(7616,PLAYTIME) == 1) && (checkquest(7629,PLAYTIME) == 0 || checkquest(7629,PLAYTIME) == 1)" );
+=======
+	questinfo 7615,QTYPE_QUEST,1;// inaccurate
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7615,QTYPE_QUEST,1;// inaccurate
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -2146,10 +2177,13 @@ S_Daily:
 	end;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(7616) && ep15_1_atnad > 16" );
 =======
 
 OnInit:
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7615,QTYPE_QUEST,1;// inaccurate
 	setquestinfo_req 7615,7616,0;
 	end;
@@ -4348,7 +4382,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -4384,12 +4423,15 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7610, QTYPE_QUEST, 1;
@@ -5330,6 +5372,7 @@ lhz_in01,270,257,4	script	Rekenber Chairman#e152i	4_M_REKENBER,{
 		cutin "verus_ian01.bmp",2;
 		mes "[Ian Atnad]";
 		mes "I found myself in a motel room in Yuno when I came to.";
+<<<<<<< HEAD
 		mes "I didn't even know how much time has passed.";
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		next;
@@ -5538,6 +5581,8 @@ lhz_in01,270,257,4	script	Rekenber Chairman#e152i	4_M_REKENBER,{
 		cutin "verus_ian01.bmp",2;
 		mes "[Ian Atnad]";
 		mes "I found myself in a motel room in Yuno when I came to.";
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		mes "I didn't even know how much time has passed.";
 		next;
 		cutin "verus_aures.bmp",0;
@@ -5996,7 +6041,12 @@ OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(11363)" );
+=======
+	questinfo 11363,QTYPE_QUEST,1;
+	setquestinfo_req 11363,11364,0,11365,0,11366,0;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 11363,QTYPE_QUEST,1;
 	setquestinfo_req 11363,11364,0,11365,0,11366,0;

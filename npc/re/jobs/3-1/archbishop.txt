@@ -32,7 +32,11 @@ prt_church,103,88,3	script	Praying Minister#arch	60,{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Arch_Bishop) {
+=======
+		if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Bishop) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 		if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Bishop) {
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -803,7 +807,11 @@ job3_arch01,29,34,3	script	Valkyrie#arch	403,{
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} else if (Class != Job_Arch_Bishop && Class != Job_Arch_Bishop_T && Class != Job_Baby_Arch_Bishop) {
+=======
+	} else if (Class != Job_Arch_Bishop && Class != Job_Arch_Bishop_T && Class != Job_Baby_Bishop) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	} else if (Class != Job_Arch_Bishop && Class != Job_Arch_Bishop_T && Class != Job_Baby_Bishop) {
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
