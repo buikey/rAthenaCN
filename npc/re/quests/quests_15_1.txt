@@ -85,7 +85,12 @@ OnTouch_:
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -215,7 +220,12 @@ moc_para01,38,175,5	script	Secretary Lime Evenor#evtat01	4_F_EDEN_OFFICER,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7607) == 0 && ep15_1_atnad < 3" );
+=======
+	questinfo 7607, QTYPE_QUEST, 1;
+	setquestinfo_level 7607,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7607, QTYPE_QUEST, 1;
 	setquestinfo_level 7607,140,175;
@@ -553,10 +563,13 @@ ver_eju,114,40,4	script	Manager Michelle#atnd05	4_M_LGTGUARD,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7611) == 0 && ep15_1_atnad == 4" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7611,HUNTING) == 2" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7611,QTYPE_QUEST,1;
@@ -564,6 +577,9 @@ OnInit:
 	// questinfo 7612,QTYPE_QUEST,1;
 	// setquestinfo_req 7612,7611,2;// todo : display when HUNTING completed
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -684,7 +700,12 @@ verus04,182,168,5	script	Receptionist Nara#atnd06	4_F_HUWOMAN,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 0 && BaseLevel >= 140" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610,140,175;
@@ -926,11 +947,14 @@ verus04,179,165,5	script	Commander Louis#atnd07	4_M_LGTGUARD,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 2 && isbegin_quest(7611) == 0 && isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7613) == 0 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7613,HUNTING) == 2 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7618) == 0 && isbegin_quest(7617) == 1" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7611,QTYPE_QUEST,1;
@@ -943,6 +967,9 @@ OnInit:
 	// questinfo 7614,QTYPE_QUEST,1;
 	// setquestinfo_req 7614,7613,2;// todo : display when HUNTING completed
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -1284,8 +1311,12 @@ verus04,141,193,5	script	Archaeologist Aures#atnd09	4_M_OLDSCHOLAR,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7619) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7617) == 0 && isbegin_quest(7618) == 0 && (checkquest(7616,PLAYTIME) == 0 || checkquest(7616,PLAYTIME) == 1) && (checkquest(7629,PLAYTIME) == 0 || checkquest(7629,PLAYTIME) == 1)" );
+=======
+	questinfo 7615,QTYPE_QUEST,1;// inaccurate
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7615,QTYPE_QUEST,1;// inaccurate
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -4316,7 +4347,12 @@ juperos_01,242,91,3	script	Rekenber Guard#atd06	4_M_LGTGUARD,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -4347,12 +4383,15 @@ yuno_fild07,211,179,5	script	Excavator Guide#atd07	4_M_LGTGUARD,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
 	end;
@@ -5074,6 +5113,7 @@ OnInit:
 }
 */
 
+<<<<<<< HEAD
 verus04,115,221,5	script	Fallen Man#ep15_1_elyo	4_M_DIEMAN,{
 	if (checkweight(1119,3) == 0) {
 		mes "- You are carrying too many items to proceed with the quest -";
@@ -5194,6 +5234,104 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs	4_F_ZONDAGIRL,{
 		mes "[Elisha]";
 		mes "My company Rekenber is in partnership with the Eden Group";
 		mes "for the ^0000FFPhantasmagorika excavation project^000000.";
+=======
+lhz_in01,270,257,4	script	Rekenber Chairman#e152i	4_M_REKENBER,{
+	if (VER_MAIN < 37)
+		end;
+	if (VER_MAIN == 37) {
+		cutin "ep15_rekenber01.bmp",0;
+		mes "[Rekenber Chairman]";
+		mes "I am the chairman of Rekenber.";
+		mes "I invited you to come.";
+		next;
+		mes "[Rekenber Chairman]";
+		mes "I have heard a lot and am familiar with the activities of the Atnad excavation team.";
+		mes "A lot of big results are being achieved as a corporation.";
+		mes "Thanks to you.";
+		next;
+		mes "[Rekenber Chairman]";
+		mes "The reason I have invited you....";
+		mes "You may already know as team leader Dr. Atnad.";
+		next;
+		cutin "verus_ian02.bmp",2;
+		mes "[Ian Atnad]";
+		mes "Could it be......";
+		next;
+		cutin "ep15_rekenber01.bmp",0;
+		mes "[Rekenber Chairman]";
+		mes "It is what you are predicting.";
+		mes "It's about the Memory Records contents you have been working so hard to collect.";
+		next;
+		mes "[Rekenber Chairman]";
+		mes "We plan to dispose of the content known through the Memory Records and the word of the Memory Records themselves as if it never happened.";
+		mes "I hope you will cooperate with this.";
+		next;
+		select("What did you say?");
+		mes "[Rekenber Chairman]";
+		mes "If this information is leaked outside, the corporation is willing to treat your excavation team with courtesy.";
+		next;
+		cutin "verus_ian03.bmp",2;
+		mes "[Ian Atnad]";
+		mes "Treatment? Courtesy?";
+		mes "What are you trying to sell!";
+		next;
+		mes "[Ian Atnad]";
+		mes "What is the reason people can't know about the past of the city buried underground!";
+		mes "Who are you to act like this!";
+		next;
+		mes "[Ian Atnad]";
+		mes "We are people who look to truth and fact through the past.";
+		mes "Are you trying to block your eyes and ears now?";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Chief Secretary]";
+		mes "Instead we will give you sole rights to everything related to the Memory Records.";
+		next;
+		cutin "verus_ian02.bmp",2;
+		mes "[Ian Atnad]";
+		mes "What are you talking about now?";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Chief Secretary]";
+		mes "We do not mean cease your work.";
+		mes "We are not saying discard all the information you have found.";
+		mes "However, what we want is...";
+		next;
+		mes "[Chief Secretary]";
+		mes "I want to bury the story between myself, and you.";
+		mes "Do you not remember?";
+		mes "We are probably acquainted.";
+		mes "Although I did make some preparations.";
+		next;
+		cutin "verus_ian02.bmp",2;
+		mes "[Ian Atnad]";
+		mes "... Now that I think you do look familiar..";
+		mes "Juperos!";
+		mes "Yes, I saw you at Juperos.";
+		next;
+		cutin "verus_ian03.bmp",2;
+		mes "[Ian Atnad]";
+		mes "That time you did.. in the crack that looked like a passage...";
+		mes "......You attacked me!";
+		mes "You bastard.. Because of you..!!";
+		next;
+		cutin "verus_aures.bmp",0;
+		mes "[Aures]";
+		mes "Hoho. I meet the main culprit of my family's destruction.";
+		mes "Is this meant to be?";
+		next;
+		select("What do you mean family's destruction?");
+		mes "[Aures]";
+		mes "The time, that accident or whatever you call it.";
+		mes "When I found a seemingly artificial obstacle during the Juperos excavation..";
+		mes "Ian suddenly disappeared.";
+		emotion ET_SURPRISE, getnpcid(0, "Commander Arquien#ep152i");
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "I found myself in a motel room in Yuno when I came to.";
+		mes "I didn't even know how much time has passed.";
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		next;
 		mes "[Elisha]";
 		mes "The newly discovered legacy of the ancients: Phantasmagorika!";
@@ -5857,7 +5995,12 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs2	4_F_ZONDAGIRL,{
 OnInit:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(11363)" );
+=======
+	questinfo 11363,QTYPE_QUEST,1;
+	setquestinfo_req 11363,11364,0,11365,0,11366,0;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 11363,QTYPE_QUEST,1;
 	setquestinfo_req 11363,11364,0,11365,0,11366,0;

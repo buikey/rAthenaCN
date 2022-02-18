@@ -73,6 +73,9 @@ job3_guil01,91,93,3	script	Rare Herb Collector	1_M_03,{
 		mes "- �ٽ��н���. -";
 		close;
 	}
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
 		mes "[ϡ�в�ҩ�ռ���]";

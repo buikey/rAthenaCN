@@ -740,7 +740,11 @@ job3_guil01,82,95,3	script	Daora#3rdgc02	940,{
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Guillotine_Cross) {
+=======
+	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -3765,7 +3769,11 @@ job3_guil01,148,53,3	script	Bercasell#3rdgc16	467,{
 		}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Guillotine_Cross) {
+=======
+	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	} else if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
