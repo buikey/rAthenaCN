@@ -59,9 +59,15 @@ job3_guil01,91,93,3	script	Rare Herb Collector	1_M_03,{
 		mes "- after you lose some weight. -";
 		close;
 	}
+<<<<<<< HEAD
 	if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Guillotine_Cross) {
 		mes "[Rare Poison Herb Collector]";
 		mes "I wander around the world and collect rare poison herbs. Recently, I started dealing in the herb called Izidor. If you are interested, you can buy them.";
+=======
+	if (Class == Job_Guillotine_Cross || Class == Job_Guillotine_Cross_T || Class == Job_Baby_Cross) {
+		mes "[Ï¡ÓĞ²İÒ©ÊÕ¼¯Õß]";
+		mes "ÎÒÅÇ»²ÔÚÊÀ½ç¸÷µØÊÕ¼¯º±¼ûµÄ¶¾Ò©Ò©²Ä. ×î½ü, ÎÒ¿ªÊ¼´¦ÀíÒ©²İ³ÆÎªIzidor. Èç¹ûÄúÓĞĞËÈ¤, Äú¿ÉÒÔ¹ºÂòËü.";
+>>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
 		next;
 		.@i = select("How can I buy them?:Exchange it for Animal Blood:Exchange it for a Bitter Herb:Exchange it for a Deadly Noxious Herb:Exchange it for a Frozen Rose:Exchange it for Ment:Exchange it for Hinalle")-2;
 		if (.@i == -1) {

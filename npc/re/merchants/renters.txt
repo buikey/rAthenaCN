@@ -16,10 +16,17 @@
 
 // Dragon Breeder :: dragon
 //============================================================
+<<<<<<< HEAD
 job3_rune01,88,62,5	script	Dragon Breeder	105,{
 	mes "[Dragon Breeder]";
 	if (Class == Job_Rune_Knight || Class == Job_Rune_Knight_T || Class == Job_Baby_Rune_Knight) {
 		mes "Welcome. Would you like to rent a Dragon?";
+=======
+job3_rune01,88,62,5	script	×øÆïÁúËÇÑøÔ±	8W_SOLDIER,{
+	mes "[×øÆïÁúËÇÑøÔ±]";
+	if (Class == Job_Rune_Knight || Class == Job_Rune_Knight_T || Class == Job_Baby_Rune) {
+		mes "ÄúºÃ°¡, Ã°ÏÕÕß, ÏëÅªÌõÁúÀ´ÆïÆïÂğ?";
+>>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
 		next;
 		switch(select("Yes:No")) {
 		case 1:
@@ -54,10 +61,17 @@ job3_rune01,88,62,5	script	Dragon Breeder	105,{
 
 // Dragon/Gryphon Master :: dragon
 //============================================================
+<<<<<<< HEAD
 prontera,130,213,5	script	Riding Creature Master	105,{
 	mes "[Riding Creature Master]";
 	if (Class == Job_Rune_Knight || Class == Job_Rune_Knight_T || Class == Job_Baby_Rune_Knight) {
 		mes "Welcome. Would you like to rent a Dragon?";
+=======
+prontera,130,213,5	script	ÊŞÆï¹ÜÀíÔ±	8W_SOLDIER,{
+	mes "[ÊŞÆï¹ÜÀíÔ±]";
+	if (Class == Job_Rune_Knight || Class == Job_Rune_Knight_T || Class == Job_Baby_Rune) {
+		mes "ÄãºÃ°¡, Ã°ÏÕ¼Ò, Ïë×âÓÃÒ»Í·×øÆïÂğ?";
+>>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
 		next;
 		switch(select("Yes:No")) {
 		case 1:
@@ -85,8 +99,13 @@ prontera,130,213,5	script	Riding Creature Master	105,{
 			close;
 		}
 	}
+<<<<<<< HEAD
 	if (Class == Job_Royal_Guard || Class == Job_Royal_Guard_T || Class == Job_Baby_Royal_Guard) {
 		mes "Welcome. Would you like to rent a Gryphon?";
+=======
+	if (Class == Job_Royal_Guard || Class == Job_Royal_Guard_T || Class == Job_Baby_Guard) {
+		mes "ÄãºÃ°¡, É§Äê, Ïë×âÓÃÒ»Í·Ê¨ğÕÂğ?";
+>>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
 		next;
 		switch(select("Yes:No")) {
 		case 1:

@@ -83,7 +83,12 @@ OnTouch_:
 	end;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 morocc,208,287,3	duplicate(spokesperson)	Phantasmagorika Spokesperson#moc	4_F_ZONDAGIRL,4,4
@@ -203,7 +208,12 @@ moc_para01,38,175,5	script	Secretary Lime Evenor#evtat01	4_F_EDEN_OFFICER,{
 	}
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7607) == 0 && ep15_1_atnad < 3" );
+=======
+	questinfo 7607, QTYPE_QUEST, 1;
+	setquestinfo_level 7607,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -531,9 +541,16 @@ ver_eju,114,40,4	script	Manager Michelle#atnd05	4_M_LGTGUARD,{
 	end;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7611) == 0 && ep15_1_atnad == 4" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7611,HUNTING) == 2" );
+=======
+	questinfo 7611,QTYPE_QUEST,1;
+	setquestinfo_req 7611,7612,0;
+	// questinfo 7612,QTYPE_QUEST,1;
+	// setquestinfo_req 7612,7611,2;// todo : display when HUNTING completed
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -649,7 +666,12 @@ verus04,182,168,5	script	Receptionist Nara#atnd06	4_F_HUWOMAN,{
 	close;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 0 && BaseLevel >= 140" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -881,10 +903,22 @@ verus04,179,165,5	script	Commander Louis#atnd07	4_M_LGTGUARD,{
 	end;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 2 && isbegin_quest(7611) == 0 && isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7613) == 0 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7613,HUNTING) == 2 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7618) == 0 && isbegin_quest(7617) == 1" );
+=======
+	questinfo 7611,QTYPE_QUEST,1;
+	setquestinfo_req 7611,7612,0;
+	// questinfo 7612,QTYPE_QUEST,1;
+	// setquestinfo_req 7612,7611,2;// todo : display when HUNTING completed
+
+	questinfo 7613,QTYPE_QUEST,1;
+	setquestinfo_req 7613,7614,0;
+	// questinfo 7614,QTYPE_QUEST,1;
+	// setquestinfo_req 7614,7613,2;// todo : display when HUNTING completed
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -1024,7 +1058,7 @@ verus04,141,193,5	script	Archaeologist Aures#atnd09	4_M_OLDSCHOLAR,{
 		mes "but I want to know how much progress Lloyd has made with his investigation.";
 		mes "Could you go check up on him?";
 		mes "Thank you.";
-		completequest 7619;// Assisting the Excavation Team
+		erasequest 7619;// Assisting the Excavation Team
 		setquest 7620;// Young Blood?
 		ep15_1_atnad = 9;
 		close3;
@@ -1221,8 +1255,12 @@ verus04,141,193,5	script	Archaeologist Aures#atnd09	4_M_OLDSCHOLAR,{
 	end;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7619) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7617) == 0 && isbegin_quest(7618) == 0 && (checkquest(7616,PLAYTIME) == 0 || checkquest(7616,PLAYTIME) == 1) && (checkquest(7629,PLAYTIME) == 0 || checkquest(7629,PLAYTIME) == 1)" );
+=======
+	questinfo 7615,QTYPE_QUEST,1;// inaccurate
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -2042,10 +2080,241 @@ S_Daily:
 		mes "...Hoo..";
 		return;
 	}
+<<<<<<< HEAD
 	end;
 
 OnInit:
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(7616) && ep15_1_atnad > 16" );
+=======
+
+OnInit:
+	questinfo 7615,QTYPE_QUEST,1;// inaccurate
+	setquestinfo_req 7615,7616,0;
+	end;
+}
+
+verus03,167,257,5	script	Access Controller Damhw#atnd	4_M_LGTGUARD,{
+	.@visible_name$ = strnpcinfo(1);
+	if (.@visible_name$ == "Access Controller Damhw")
+		.@npc_name$ = "Damhwa";
+	else if (.@visible_name$ == "Access Controller Geuma")
+		.@npc_name$ = "Geuman";
+	else
+		.@npc_name$ = "Gyuhwa";
+
+	mes "[" + .@npc_name$ + "]";
+	if (VER_MAIN < 19) {
+		mes "I am sorry, only permitted excavation team members are permitted access.";
+		mes "If you work hard with your current excavation team the permit will come.";
+		close;
+	}
+	if (isbegin_quest(7641) == 2) {
+		mes "How is the research and investigation going?";
+		mes "The machines in the restricted area are quite dangerous so please be careful.";
+		close;
+	}
+	mes "This place can only be accessed by permitted members.";
+	mes "Where are you coming from?";
+	next;
+	if (select("I am coming from the atnad excavation", "Why am I prohibited?") == 1) {
+		mes "[" + .@npc_name$ + "]";
+		mes "Ah. You are a member of the Atnad excavation team.";
+		mes "Yes I have confirmed you on the list.";
+		mes "Atnad excavators are permitted access.";
+		next;
+		select("Why is access prohibited?");
+	}
+	mes "[" + .@npc_name$ + "]";
+	mes "Verus City is divided into four large sections.";
+	mes "Did you know?";
+	next;
+	mes "[" + .@npc_name$ + "]";
+	mes "The area currently open are the town and plaza.";
+	mes "While the reason is unknown this place has been closed off and prohibited.";
+	next;
+	mes "[" + .@npc_name$ + "]";
+	mes "During independent corporate investigations before excavator recruitment,";
+	mes "we found that there was a large explosion here and to check the safety of the area,";
+	mes "an inspection period was needed.";
+	next;
+	mes "[" + .@npc_name$ + "]";
+	mes "This is place currently not seen as a great risk other than the dangerous terrain and possibility of";
+	mes "being attacked by machines like the plaza, so access is limited only to the excavation team.";
+	next;
+	mes "[" + .@npc_name$ + "]";
+	mes "Please note that the permit also includes the zone connected in the West.";
+	next;
+	mes "[" + .@npc_name$ + "]";
+	mes "Anyway, since you are permitted you may enter freely from now on.";
+	mes "Then I expect there to be good results!";
+	completequest 7641;// Access Permitted (note : player can enter in verus01 without this quest)
+	close;
+}
+verus03,172,257,3	duplicate(Access Controller Damhw#atnd)	Access Controller Gyuhw#atnd	4_M_LGTGUARD
+verus03,52,250,5	duplicate(Access Controller Damhw#atnd)	Access Controller Geuma#atnd	4_M_LGTGUARD
+
+verus03,52,254,0	script	verus03_to_verus01	WARPNPC,1,1,{
+	if (VER_MAIN < 19) {
+		mes "[Access Controller]";
+		mes "I am sorry but only permitted members can enter from this point.";
+		close;
+	}
+	warp "verus01",243,62;
+	end;
+}
+
+verus03,169,259,0	script	verus03_to_verus02	WARPNPC,1,1,{
+	if (VER_MAIN < 19) {
+		mes "[Access Controller]";
+		mes "I am sorry but only permitted members can enter from this point.";
+		close;
+	}
+	warp "verus02",72,19;
+	end;
+}
+
+
+verus02,60,30,1	script	Strewn paper#e152a01	4_ENERGY_BLUE,{
+	if (checkweight(1301,1) == 0) {
+		mes "- Cannot progress quest because you have too many items in your possession. -";
+		close;
+	}
+	if (VER_MAIN == 20) {
+		mes "Decided to deliver the 'Memory Record' found in the heap to Dr. Ian Atnad.";
+		mes "Right now a piece of paper hard to read is left.";
+		close;
+	}
+	if (isbegin_quest(7645) == 0 && isbegin_quest(7650) == 0 && VER_MAIN != 19) {
+		mes "Nothing special is found.";
+		close;
+	}
+	if (countitem(6757) > 4) {
+		mes "Enough Memory Records are collected.";
+		mes "No more need to go through the heap of garbage.";
+		close;
+	}
+	if (VER_MAIN == 19) {
+		mes "All sorts of documents and office supplies are piled up in a heap.";
+		mes "Most of the writing is damaged and hard to read.";
+	}
+	else
+		mes "Something may come out by a search.";
+	next;
+	if (select("Check adequately.", "Quit.") == 2) {
+		mes "Decided to investigate something else.";
+		close;
+	}
+	progressbar "00ff00",3;
+	disablenpc strnpcinfo(0);
+	getitem 6757,1;// The_Memory_Recorder
+	if (VER_MAIN == 19) {
+		mes "You find a object never seen before as you go through the clutter of documents and office supplies.";
+		mes "^4d4dffThis needs to be checked if it has enough research value to be brought back to Dr. Ian Atnad.^000000";
+		erasequest 7642;// Explore Research facilities
+		setquest 7643;// Mysterious Piece
+		VER_MAIN = 20;
+	}
+	else {
+		mes "Found a Memory Record between the piles of documents.";
+		mes "Seems like someone hid it there on purpose.";
+	}
+	initnpctimer;
+	close;
+
+OnTimer60000:
+	stopnpctimer;
+	enablenpc strnpcinfo(0);
+	end;
+}
+verus02,178,32,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a02	4_ENERGY_BLUE
+verus02,102,135,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a03	4_ENERGY_BLUE
+verus02,42,37,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a04	4_ENERGY_BLUE
+verus02,155,64,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a05	4_ENERGY_BLUE
+verus02,80,129,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a06	4_ENERGY_BLUE
+verus02,29,129,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a07	4_ENERGY_BLUE
+verus02,125,85,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a08	4_ENERGY_BLUE
+verus02,51,237,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a09	4_ENERGY_BLUE
+verus02,160,150,3	duplicate(Strewn paper#e152a01)	Strewn paper#e152a10	4_ENERGY_BLUE
+
+verus01,123,181,3	script	Verity#Warper	4_F_BERRYTEA,{
+	mes "[Verity]";
+	mes "Hello.";
+	mes "Are you here for the underground bunker investigation?";
+	cutin "EP15_2_brt_2.bmp", 2;
+	next;
+	switch( select( "Yes", "No.", "Use gravity safety device" ) ) {
+	case 1:
+		mes "[Verity]";
+		mes "It seems very dangerous below so please be careful.";
+		cutin "EP15_2_brt_1.bmp",2;
+		next;
+		mes "[Verity]";
+		mes "If you consider the appearance of monsters not seen in other areas, something is...";
+		cutin "EP15_2_brt_3.bmp",2;
+		close2;
+		warp "un_bunker",98,91;
+		end;
+	case 2:
+		break;
+	case 3:
+		mes "[Verity]";
+		mes "You can easily reach the entrance of the last room by using the gravity safety device.";
+		cutin "EP15_2_brt_1.bmp",2;
+		next;
+		if (select( "Use.", "Quit." ) == 1) {
+			mes "[Verity]";
+			if (countitem(6828) < 1) {
+				mes "I see you do not have the gravity safety device with you.";
+				close2;
+				cutin "",255;
+				end;
+			}
+			delitem 6828,1;// Gravity_Safety_Device
+			close2;
+			warp "un_myst",142,38;
+			@weird_piece = 0;
+			end;
+		}
+		break;
+	}
+	mes "[Verity]";
+	mes "Is that so?";
+	mes "Hm...";
+	cutin "EP15_2_brt_1.bmp",2;
+	close3;
+}
+
+un_bunker,382,335,3	script	Box#e152p00	4_ENERGY_BLUE,{
+	if (checkweight(1301,1) == 0) {
+		mes "- Cannot progress quest because you have too many items in your possession. -";
+		close;
+	}
+	if (VER_MAIN == 27 || isbegin_quest(7652) > 0) {// Collect Memory Records of Laboratories
+		if (countitem(6824) > 4) {
+			mes "Enough Memory Records are collected.";
+			mes "No need to keep on crawling and searching.";
+			close;
+		}
+		if (VER_MAIN == 27)
+			mes "Something shiny is seen under the desk.";
+		else
+			mes "Something may come out by a search.";
+		next;
+		if (select( "Check below.", "Quit." ) == 1) {
+			progressbar "00ff00",3;
+			mes "Found a Memory Record under the desk.";
+			getitem 6824,1;// Experimental_Dong_Memory_Record
+			initnpctimer;
+			disablenpc strnpcinfo(0);
+		}
+		close;
+	}
+	mes "Nothing special is found.";
+	close;
+OnTimer30000:
+	stopnpctimer;
+	enablenpc strnpcinfo(0);
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -4014,7 +4283,12 @@ juperos_01,242,91,3	script	Rekenber Guard#atd06	4_M_LGTGUARD,{
 	close;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -4035,7 +4309,12 @@ yuno_fild07,211,179,5	script	Excavator Guide#atd07	4_M_LGTGUARD,{
 	close;
 
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
@@ -4968,6 +5247,7 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs	4_F_ZONDAGIRL,{
 		mes "[Elisha]";
 		mes "To register for the use of the facility, please visit ^0000FFRekenber Corporation Headquarters in Lighthalzen and talk to Leitner at the information desk to the west from the main entrance on the first floor^000000.";
 		next;
+<<<<<<< HEAD
 		mes "[Elisha]";
 		mes "The whole registration process may sound cumbersome, but using the elevator is worth the trouble.";
 		if (ep15_1_elb == 0) {
@@ -4980,6 +5260,458 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs	4_F_ZONDAGIRL,{
 		mes "My company Rekenber is in partnership with the Eden Group";
 		mes "for the ^0000FFPhantasmagorika excavation project^000000.";
 		next;
+=======
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "I found myself in a motel room in Yuno when I came to.";
+		mes "I didn't even know how much time has passed.";
+		next;
+		cutin "verus_aures.bmp",0;
+		mes "[Aures]";
+		mes "The man went to look around the excavation site and didn't return in over a week...";
+		mes "What do you think we thought?";
+		mes "We wondered if he suffered an unfortunate accident.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "My teeth gnash whenever I think of that time.";
+		mes "Because of the vague memories of that time..";
+		mes "I clung to Juperos like a mad man.";
+		next;
+		cutin "ep15_tatio02.bmp",0;
+		mes "[Chief Secretary]";
+		mes "......I am sorry about that.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "You're the one who attacked me, right?";
+		mes "What happened to the week I lost.";
+		mes "...After that, I chased after an illusion I wasn't sure was a dream or hallucination.";
+		next;
+		mes "[Ian Atnad]";
+		mes "I blindly went around Juperos.";
+		mes "Lost my team members.. even forgot that I had a family and a home to go back to.";
+		next;
+		cutin "Arquien_n_atnad01.bmp",0;
+		mes "[Arquien]";
+		mes "...Why did you?";
+		mes "Please tell me. Chief Secretary.";
+		mes "Why did you attack father?";
+		next;
+		cutin "ep15_tatio03.bmp",0;
+		mes "[Chief Secretary]";
+		mes "That is.. because the doctor saw something he shouldn't have at the time.";
+		mes "Verus city was not ready to be revealed.";
+		next;
+		cutin "verus_ian02.bmp",2;
+		mes "[Ian Atnad]";
+		mes "What?! Verus!!!";
+		mes "So what I found then was a passage to Verus?!";
+		next;
+		cutin "Arquien_n_atnad02.bmp",0;
+		mes "[Arquien]";
+		mes "No no wait wait.";
+		mes "Father, speak to me for a moment.";
+		mes "I just need a moment.";
+		next;
+		mes "I don't know what is happening.";
+		mes "Should we listen to the Atnads first?";// cross line?
+		VER_MAIN = 38;
+		close3;
+	}
+	if (VER_MAIN == 38) {
+		cutin "ep15_rekenber02.bmp",0;
+		mes "[Rekenber Chairman]";
+		mes ".... What can we do.";
+		mes "We will wait. Please speak.";
+		close3;
+	}
+	cutin "ep15_rekenber01.bmp",0;
+	mes "[Rekenber Chairman]";
+	mes "A chairman's job is to do nothing in times like this.";
+	mes "... That is it.";
+	close3;
+}
+
+lhz_in01,267,257,5	script	Chief Secretary#e152i01	4_M_TATIO,{
+	if (VER_MAIN < 37)
+		end;
+	if (VER_MAIN == 37) {
+		mes "[Chief Secretary]";
+		cutin "ep15_tatio01.bmp",0;
+		mes "The chairman has waited for a long time.";
+		mes "I as well.";
+		close3;
+	}
+	if (VER_MAIN == 38) {
+		mes "[Chief Secretary]";
+		cutin "ep15_tatio01.bmp",0;
+		mes "Are you taken aback?";
+		mes "So have I. I did not think people's lives to be tied together as so.";
+		mes "Anyway that young lady...";
+		next;
+		cutin "ep15_tatio03.bmp",0;
+		mes "[Chief Secretary]";
+		mes ".. has a good strong attitude.";
+		mes "True.";
+		mes "Please speak.";
+		mes "I will wait.";
+		close3;
+	}
+	if (VER_MAIN == 39) {
+		mes "[Chief Secretary]";
+		cutin "ep15_tatio01.bmp",0;
+		mes "I see it is my turn again.";
+		mes "I will formally introduce you.";
+		mes "The last survivor of Verus City, Tatio.W.00H-1.";
+		mes "Simply call him Tatio.";
+		next;
+		npctalk "What?!", "Ian Atnad#ep152i01";
+		mes "[Tatio]";
+		mes "Not revealing the contents of the Memory Records by the corporation.";
+		mes "Attacking you at Juperos was all because I wanted to.";
+		next;
+		cutin "ep15_tatio02.bmp",0;
+		mes "[Tatio]";
+		mes "To tell you this I have no choice but to reveal my identity.";
+		mes "I have prepared for this but.. it does not feel great.";
+		next;
+		cutin "",255;
+		mes "Everybody seems frozen by the massive news.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "I am the Tatio in the Memory Records you have discovered.";
+		mes "And Atnad is Lasse Atnad, the great-grandfather of Dr. Atnad.";
+		next;
+		cutin "ep15_tatio03.bmp",0;
+		mes "[Tatio]";
+		mes "Lasse is one of the people who made me, and a friend.";
+		mes "I wanted to protect Verus, which is home to my undead machine body...";
+		next;
+		mes "[Tatio]";
+		mes "I have committed that discourtesy that the time.";
+		mes "And on top of that, I had a hand on hiding what the doctor saw........";
+		mes "I manipulated his memory a bit.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "That is why you have that one week gap.";
+		mes "I took care of you for four days and sent you to the motel in Yuno.";
+		next;
+		cutin "ep15_tatio02.bmp",0;
+		mes "[Tatio]";
+		mes "I would not have done that if I knew you were a descendant of Lasse.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "Verus city a long.. long. Time ago was once side by side with Juperos..";
+		mes "No surpassed it as a great city of science with a scientific civilization.";
+		next;
+		mes "[Tatio]";
+		mes "Although an unfortunate accident turned it the way it is now.";
+		mes "I did not die because I was made of machines so I just watched over Verus.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "This story. Does the chairman know?";
+		mes "Wait. He already knows I bet. Isn't that why he called us here.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "That is right.";
+		mes "The chairman knows of me and the Verus City secrets.";
+		mes "Only two in the whole world knew of this secret.";
+		next;
+		mes "[Tatio]";
+		mes "Ah, No. One of the founders, Janet Zerter knows of this as well.";
+		mes "Also one of the descendants of Verus City.";
+		next;
+		cutin "ep15_tatio02.bmp",0;
+		mes "[Tatio]";
+		mes ".....Do you now understand my previous proposal?";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "Oh oh well...";
+		mes "Although open, Verus City is still something you want to protect ..I see.";
+		mes "That is why the Memory Records...";
+		next;
+		mes "[Ian Atnad]";
+		mes "Then this doesn't apply to the other data in the city?";
+		mes "You're trying to hide it to prevent your's and my name being revealed and becoming a public issue, right?";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "The quantum level core technology unsuitable for this world's civilization has already been discarded.";
+		mes "Just like how lethal weapons are not put in the hands of children.";
+		next;
+		mes "[Tatio]";
+		mes "Although most of the data has been lost by accident...";
+		mes "You will probably gain plenty with what is now remaining.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "Why did you reveal it?";
+		mes "Should have wrapped it tightly instead.";
+		mes "Like you did to me.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "..To be honest, the first reason is that I could not easily approach the laboratories because of the energy storms during the time";
+		next;
+		mes "[Tatio]";
+		mes "And because although I do not know the reason the energy storms disappeared and";
+		mes "I assessed it as not being too dangerous.";
+		next;
+		mes "[Tatio]";
+		mes "The right time to reveal it has came.";
+		mes "This place has also come to understand what is science and engineering.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes ".. Something is doubtful, but okay.";
+		mes "I guess I should be satisfied at even having this kind of opportunity.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "I thank you for understanding.";
+		mes "I will give you sole rights to the Memory Records.";
+		mes "However the revealing of information and timing must be decided here.";
+		next;
+		mes "[Tatio]";
+		mes "And... In order to avoid affecting our descendants";
+		mes "we should keep it a secret between us as well.";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "I understand that.";
+		mes "Then I will handle the collecting of the Memory Records as I have been until now.";
+		mes "I will decide to report directly or not through you.";
+		next;
+		mes "[Ian Atnad]";
+		mes "That is it, right?";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Tatio]";
+		mes "That is right.";
+		mes "In reality there is not much change to the actual work.";
+		mes "Ah also...";
+		mes "For working diligently as a member of the Atnad excavation team..";
+		mes "" + strcharinfo(0) + " I will give you a small reward.";
+		getexp 4500000,3000000;
+		VER_MAIN = 40;
+		next;
+		mes "[Tatio]";
+		mes "The contents of the Memory Records are precious memories to me.";
+		mes "...It is like going through my diary. So I hope you take care in the future.";
+		close3;
+	}
+	cutin "ep15_tatio03.bmp",0;
+	mes "[Tatio]";
+	mes "...I hope everything goes smoothly with this...";
+	close3;
+}
+
+lhz_in01,272,255,3	script	Ian Atnad#ep152i01	4_M_IAN,{
+	if (VER_MAIN < 37)
+		end;
+	mes "[Ian Atnad]";
+	if (VER_MAIN == 37) {
+		cutin "verus_ian01.bmp",2;
+		mes "Have you arrived now?";
+		mes "It seems everybody has gathered.";
+		mes "So, let's see what it was you had to say to everybody.";
+		close3;
+	}
+	if (VER_MAIN == 38) {
+		cutin "verus_ian01.bmp",2;
+		mes "So, what do you want to say?";
+		mes "What is it that you cut me off in this important moment.";
+		next;
+		cutin "Arquien_n_atnad01.bmp",0;
+		mes "[Arquien]";
+		mes "What that man just said, was the incident of your disappearance?";
+		mes "The reason why you were running around outside for years.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Chief Secretary]";
+		mes "No.. it's not that..";
+		mes "The time I was with the doctor was only four days.";
+		next;
+		cutin "Arquien_n_atnad04.bmp",0;
+		mes "[Arquien]";
+		mes "Before you said you were stuck somewhere for a week!";
+		mes "And running around like you were possessed by a ghost!";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "That.. that..!";
+		mes "Don't treat my passion for my field like a runaway ghost!";
+		mes "At the time I thought I was going to find something about my grand-grandfather..";
+		next;
+		mes "[Ian Atnad]";
+		mes "The place I saw.. The memory I had of that place...";
+		mes ".....";
+		mes "...?";
+		next;
+		mes "[Ian Atnad]";
+		mes "Wait a minute. Are you blaming me now?";
+		mes "I sent letters home, but you were the one who didn't reply!";
+		next;
+		cutin "Arquien_n_atnad04.bmp",0;
+		mes "[Arquien]";
+		mes "All the letters were sent back because the address wasn't clear!";
+		mes "Why are you talking big!";
+		next;
+		cutin "verus_ian03.bmp",2;
+		mes "[Ian Atnad]";
+		mes "And didn't you sell the house and sent all my letters back!";
+		mes "You couldn't wait a few years so sell the house and disappear?!";
+		mes "What do you have to say for yourself!";
+		next;
+		mes "The situation is overheating due to the fight between father and daughter.";
+		mes "Aures and the secretary giving embarrassed looks.";
+		next;
+		select("Should the table be turned over?");
+		cutin "Arquien_n_atnad01.bmp",0;
+		mes "[Arquien]";
+		mes "What's that sound..";
+		mes "An..anyway isn't that secretary the main instigator of this whole incident?";
+		mes "What happened?";
+		VER_MAIN = 39;
+		close3;
+	}
+	if (VER_MAIN == 39) {
+		cutin "verus_ian01.bmp",2;
+		mes "We keep losing the point.";
+		mes "Shouldn't you ask why he attacked me first.";
+		mes "Let's please listen to what he has to say. Daughter.";
+		close3;
+	}
+	cutin "verus_ian01.bmp",2;
+	mes "It is confusing to hear a surprising story at once but";
+	mes "At the same time it's cathartic.";
+	mes "Hm.. I see. I see.";
+	close3;
+}
+
+lhz_in01,267,255,7	script	Aures#ep152i01	4_M_OLDSCHOLAR,{
+	if (VER_MAIN < 37)
+		end;
+	cutin "verus_aures.bmp",0;
+	mes "[Aures]";
+	if (VER_MAIN == 37) {
+		mes "Now you are here.";
+		mes "Sit here comfortably.";
+		mes "Although it might uncomfortable to sit on the corporation toilet.";
+		next;
+		mes "[Aures]";
+		mes "It is amusing to see those two together.";
+		mes "Seems you cannot trick blood.";
+		mes "Seeing how they talk alike.";
+	}
+	else if (VER_MAIN == 38)
+		mes "I loathe fighting but.. It is fun to see them together. Yes.";
+	else if (VER_MAIN > 38) {
+		cutin "verus_aures.bmp",0;
+		mes "[Aures]";
+		mes "I loathe fighting but.. It is fun to see them together. Yes.";
+	}
+	close3;
+}
+
+lhz_in01,272,251,3	script	Commander Arquien#ep152i	4_F_EDEN_MASTER,{
+	if (VER_MAIN < 37)
+		end;
+	if (VER_MAIN == 37) {
+		mes "[Arquien]";
+		cutin "Arquien_n_atnad01.bmp",2;
+		mes "Let's see if you gathered all of us to give us some bombastic story.";
+		close3;
+	}
+	if (VER_MAIN == 38) {
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "So, what do you want to say?";
+		mes "What is it that you cut me off in this important moment.";
+		next;
+		cutin "Arquien_n_atnad01.bmp",0;
+		mes "[Arquien]";
+		mes "What that man just said, was the incident of your disappearance?";
+		mes "The reason why you were running around outside for years.";
+		next;
+		cutin "ep15_tatio01.bmp",0;
+		mes "[Chief Secretary]";
+		mes "No.. it's not that..";
+		mes "The time I was with the doctor was only four days.";
+		next;
+		cutin "Arquien_n_atnad04.bmp",0;
+		mes "[Arquien]";
+		mes "Before you said you were stuck somewhere for a week!";
+		mes "And running around like you were possessed by a ghost!";
+		next;
+		cutin "verus_ian01.bmp",2;
+		mes "[Ian Atnad]";
+		mes "That.. that..!";
+		mes "Don't treat my passion for my field like a runaway ghost!";
+		mes "At the time I thought I was going to find something about my grandfather..";
+		next;
+		mes "[Ian Atnad]";
+		mes "The place I saw.. The memory I had of that place...";
+		mes ".....";
+		mes "...?";
+		next;
+		mes "[Ian Atnad]";
+		mes "Wait a minute. Are you blaming me now?";
+		mes "I sent letters home, but you were the one who didn't reply!";
+		next;
+		cutin "Arquien_n_atnad04.bmp",0;
+		mes "[Arquien]";
+		mes "All the letters were sent back because the address wasn't clear!";
+		mes "Why are you talking big!";
+		next;
+		cutin "verus_ian03.bmp",2;
+		mes "[Ian Atnad]";
+		mes "And didn't you sell the house and sent all my letters back!";
+		mes "You couldn't wait a few years so sell the house and disappear?!";
+		mes "What do you have to say for yourself!";
+		next;
+		mes "The situation is overheating due to the fight between father and daughter.";
+		mes "Aures and the secretary giving embarrassed looks.";
+		next;
+		select("Should the table be turned over?");
+		cutin "Arquien_n_atnad04.bmp",2;
+		mes "[Arquien]";
+		mes "What's that sound..";
+		mes "An..anyway isn't that secretary the main instigator of this whole incident?";
+		mes "What happened?";
+		VER_MAIN = 39;
+		close3;
+	}
+	if (VER_MAIN == 39) {
+		mes "[Arquien]";
+		mes ".......Let's keep listening to that secretary guy.";
+		mes "If give me nonsense I'm going to flip this company over.";
+		close3;
+	}
+	cutin "Arquien_n_atnad02.bmp",2;
+	mes "[Arquien]";
+	mes "So he means we can know the embarrassing past of the secretary by collecting and listening to the Memory Records?";
+	mes "That is kind of interesting.";
+	next;
+	cutin "Arquien_n_atnad03.bmp",2;
+	mes "[Arquien]";
+	mes "What are you doing?";
+	mes "Let's go back now.";
+	mes "To the city that was too good for its own good.";
+	close3;
+}
+
+//- To Phantasmagorika!
+yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs2	4_F_ZONDAGIRL,{
+	if (VER_MAIN >= 4) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		mes "[Elisha]";
 		mes "The newly discovered legacy of the ancients: Phantasmagorika!";
 		mes "Contact the ^0000FFEden Group^000000 to join its Phantasmagorika excavation project!";
@@ -4987,7 +5719,12 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs	4_F_ZONDAGIRL,{
 	}
 	end;
 OnInit:
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(11363)" );
+=======
+	questinfo 11363,QTYPE_QUEST,1;
+	setquestinfo_req 11363,11364,0,11365,0,11366,0;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
 
