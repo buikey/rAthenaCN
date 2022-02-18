@@ -76,7 +76,11 @@ mora,88,89,5	script	Keeper of Secrets#pa082	495,{
 				close;
 			}
 <<<<<<< HEAD
+<<<<<<< HEAD
 			if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Arch_Bishop) {
+=======
+			if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Bishop) {
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 			if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Bishop) {
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -111,10 +115,13 @@ mora,88,89,5	script	Keeper of Secrets#pa082	495,{
 		close;
 	case 3:
 <<<<<<< HEAD
+<<<<<<< HEAD
 		if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Arch_Bishop) {
 			mes "[Artifice]";
 			mes "We exchange rings into coins for those who cannot control the ring.";
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		if (Class == Job_Arch_Bishop || Class == Job_Arch_Bishop_T || Class == Job_Baby_Bishop) {
 			mes "[����]";
 			mes "���ǿ�����Ӳ�ҽ�����Щʧ�صĽ�ָ.";

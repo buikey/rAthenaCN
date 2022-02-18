@@ -84,7 +84,12 @@ OnTouch_:
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -209,7 +214,12 @@ moc_para01,38,175,5	script	Secretary Lime Evenor#evtat01	4_F_EDEN_OFFICER,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7607) == 0 && ep15_1_atnad < 3" );
+=======
+	questinfo 7607, QTYPE_QUEST, 1;
+	setquestinfo_level 7607,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7607, QTYPE_QUEST, 1;
 	setquestinfo_level 7607,140,175;
@@ -542,14 +552,20 @@ ver_eju,114,40,4	script	Manager Michelle#atnd05	4_M_LGTGUARD,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7611) == 0 && ep15_1_atnad == 4" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7611,HUNTING) == 2" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7611,QTYPE_QUEST,1;
 	setquestinfo_req 7611,7612,0;
 	// questinfo 7612,QTYPE_QUEST,1;
 	// setquestinfo_req 7612,7611,2;// todo : display when HUNTING completed
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
@@ -667,7 +683,12 @@ verus04,182,168,5	script	Receptionist Nara#atnd06	4_F_HUWOMAN,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 0 && BaseLevel >= 140" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610,140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610,140,175;
@@ -904,11 +925,14 @@ verus04,179,165,5	script	Commander Louis#atnd07	4_M_LGTGUARD,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7610) == 2 && isbegin_quest(7611) == 0 && isbegin_quest(7612) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7613) == 0 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "checkquest(7613,HUNTING) == 2 && isbegin_quest(7614) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7618) == 0 && isbegin_quest(7617) == 1" );
 =======
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	questinfo 7611,QTYPE_QUEST,1;
 	setquestinfo_req 7611,7612,0;
 	// questinfo 7612,QTYPE_QUEST,1;
@@ -918,6 +942,9 @@ OnInit:
 	setquestinfo_req 7613,7614,0;
 	// questinfo 7614,QTYPE_QUEST,1;
 	// setquestinfo_req 7614,7613,2;// todo : display when HUNTING completed
+<<<<<<< HEAD
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
@@ -1256,8 +1283,12 @@ verus04,141,193,5	script	Archaeologist Aures#atnd09	4_M_OLDSCHOLAR,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7619) == 0" );
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "isbegin_quest(7617) == 0 && isbegin_quest(7618) == 0 && (checkquest(7616,PLAYTIME) == 0 || checkquest(7616,PLAYTIME) == 1) && (checkquest(7629,PLAYTIME) == 0 || checkquest(7629,PLAYTIME) == 1)" );
+=======
+	questinfo 7615,QTYPE_QUEST,1;// inaccurate
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7615,QTYPE_QUEST,1;// inaccurate
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
@@ -4284,7 +4315,12 @@ juperos_01,242,91,3	script	Rekenber Guard#atd06	4_M_LGTGUARD,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
@@ -4310,10 +4346,110 @@ yuno_fild07,211,179,5	script	Excavator Guide#atd07	4_M_LGTGUARD,{
 
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "BaseLevel >= 140 && isbegin_quest(7610) == 0" );
 =======
 	questinfo 7610, QTYPE_QUEST, 1;
 	setquestinfo_level 7610, 140,175;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
+=======
+	questinfo 7610, QTYPE_QUEST, 1;
+	setquestinfo_level 7610, 140,175;
+	end;
+}
+
+verus03,55,245,3	script	Rekenber Scholar#e152a0	2_M_MOLGENSTEIN,{
+	mes "[Rekenber Scholar]";
+	mes "Hm.. This machine seems to be have been used for tracking something.";
+	mes "What do you think?";
+	next;
+	mes "[Rekenber Technician]";
+	mes "I think so as well.";
+	mes "This screen probably indicates the position or condition of what it is tracking or detecting.";
+	next;
+	mes "[Rekenber Scholar]";
+	mes "Was it showing the situation of this closed area, perhaps?";
+	mes "It is presumed that it was impossible to directly enter based on the interior situation a while ago.";
+	next;
+	mes "[Rekenber Technician]";
+	mes "Probably so.";
+	mes "We can assume there was a large explosion just by observation with our eyes..";
+	mes "Then the reason for the people outside to install something like this ....";
+	next;
+	mes "[Rekenber Scholar]";
+	mes "Yes. It is to find out the interior situation.";
+	mes "Maybe.. there was a big accident so it might be for searching for survivors..";
+	next;
+	mes "[Rekenber Technician]";
+	mes "Indeed. You are probably right.";
+	mes "And our role is to find out the secrets of what happened here.";
+	close;
+
+}
+verus03,55,243,3	duplicate(Rekenber Scholar#e152a0)	Rekenber technician#e152a1	4_M_REPAIR
+
+verus03,59,250,7	script	Coral Excavation team C#e152	2_M_SAGE_B,{
+	mes "[Cecil]";
+	mes "Hey, Kobell. If we want to be chosen as an outstanding excavation team...!";
+	next;
+	mes "[Kobell]";
+	mes "To be..?";
+	next;
+	mes "[Cecil]";
+	mes "Is to figure out the identity of these unknown mechanical devices!";
+	next;
+	mes "[Kobell]";
+	mes "Whaat? How did this happen?";
+	mes "We didn't even major in engineering!";
+	next;
+	mes "[Cecil]";
+	mes "This place if full of machines! We can receive recognition like the Atnad excavators if we analyze them!";
+	next;
+	mes "[Kobell]";
+	mes "Aha! Indeed so.";
+	mes "But I think the Atnad excavators are around here...?";
+	next;
+	mes "[Cecil]";
+	mes "Hah! Our research goals cannot be discovered. This is a secret between you and I!";
+	next;
+	mes "[Kobell]";
+	mes "Let's do that~";
+	close;
+}
+verus03,61,250,7	duplicate(Coral Excavation team C#e152)	Coral Excavation team C#e152_	4_M_ALCHE_C
+
+verus04,1,1,0	script	#verus04_invade	HIDDEN_WARP_NPC,{
+	end;
+OnInit:
+	initnpctimer;
+	end;
+OnTimer1000:
+	mapannounce "verus04", "Police Officer Piffs: The Doom Prayers have stricken!", bc_map;
+    monster "verus04",0,0,"Ruin Grace Believer",3158,20, "#verus04_invade::OnMobDead";
+	end;
+OnTimer3000:
+	mapannounce "verus04", "Police Chief Kesler: Attention all police officers, stop the Doom Prayers before they destroy the excavation site!", bc_map;
+	end;
+OnTimer30000:
+	mapannounce "verus04", "Doom Prayers Executive: Destroy and bring the end of the world! Destroy and be saved!", bc_map;
+	end;
+OnTimer60000:
+	mapannounce "verus04", "Police Officer Piffs: Argh, Doom Prayers! Where do they keep coming from?!", bc_map;
+	end;
+OnTimer120000:
+	mapannounce "verus04", "Police Chief Kesler: Everyone, do not retreat! Don't let them destroy the excavation site!", bc_map;
+	end;
+OnTimer180000:
+	mapannounce "verus04", "Police Chief Kesler: Those Doom Prayers underestimate us.", bc_map;
+	end;
+OnTimer240000:
+	mapannounce "verus04", "Police Chief Kesler: Adventurers, the Doom Prayers have been driven out of Phantasmagorika. They're no longer a threat to your safety.", bc_map;
+	killmonster "verus04", "#verus04_invade::OnMobDead";
+	end;
+OnTimer3600000:
+	initnpctimer;
+	end;
+OnMobDead:
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	end;
 }
@@ -5720,7 +5856,12 @@ yuno_fild07,216,157,5	script	Guide Elisha#ep15_1bs2	4_F_ZONDAGIRL,{
 	end;
 OnInit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 	questinfo( QTYPE_QUEST, QMARK_YELLOW, "!isbegin_quest(11363)" );
+=======
+	questinfo 11363,QTYPE_QUEST,1;
+	setquestinfo_req 11363,11364,0,11365,0,11366,0;
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 	questinfo 11363,QTYPE_QUEST,1;
 	setquestinfo_req 11363,11364,0,11365,0,11366,0;

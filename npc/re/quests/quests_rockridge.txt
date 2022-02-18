@@ -4741,7 +4741,10 @@ rockrdg1,36,250,5	script	Mr. McPhy#rkdlout	4W_M_02,{
 		mes "[Mr. McPhy]";
 		mes "Did you find something? Then let's go back!";
 <<<<<<< HEAD
+<<<<<<< HEAD
 		cloakonnpc strnpcinfo(0), getcharid(0);
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 		close;
@@ -4760,12 +4763,15 @@ rockrdg1,36,250,5	script	Mr. McPhy#rkdlout	4W_M_02,{
 		mes "She didn't say anything when I quit my job because I was too scared of the Buffalo Bandits. She's a good woman.";
 		close;
 <<<<<<< HEAD
+<<<<<<< HEAD
 	default:
 		mes "[Mr. McPhy]";
 		mes "*Gasp* Buffalo Bandits!";
 		close2;
 		cloakonnpc strnpcinfo(0), getcharid(0);
 		end;
+=======
+>>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 =======
 >>>>>>> parent of b63244f ([修正] NPC脚本读取警告的错误.)
 	}

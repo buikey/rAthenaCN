@@ -100,9 +100,12 @@ prontera,130,213,5	script	ÊŞÆï¹ÜÀíÔ±	8W_SOLDIER,{
 		}
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 	if (Class == Job_Royal_Guard || Class == Job_Royal_Guard_T || Class == Job_Baby_Royal_Guard) {
 		mes "Welcome. Would you like to rent a Gryphon?";
 =======
+=======
+>>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
 	if (Class == Job_Royal_Guard || Class == Job_Royal_Guard_T || Class == Job_Baby_Guard) {
 		mes "ÄãºÃ°¡, É§Äê, Ïë×âÓÃÒ»Í·Ê¨ğÕÂğ?";
 >>>>>>> parent of b63244f ([ä¿®æ­£] NPCè„šæœ¬è¯»å–è­¦å‘Šçš„é”™è¯¯.)
